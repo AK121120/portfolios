@@ -10,7 +10,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
     line-height: 1.5;
 }
@@ -392,11 +392,15 @@ header .follow a:hover{
     flex:1 1 25rem;
     text-align: center;
     padding:2rem;
+    text-transform: capitalize;
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
 }
-
+.contact .icons-container .icons:hover{
+    background:#FDBE01;
+    letter-spacing: .2rem;
+}
 .contact .icons-container .icons i{
     height:5rem;
     width:5rem;
@@ -438,7 +442,7 @@ header .follow a:hover{
     width: 100%;
     border-bottom: .1rem solid #333;
     color:#333;
-    text-transform: none;
+    text-transform: lowercase;
     font-size: 1.7rem;
     padding:1rem 0;
     margin:1rem 0;
@@ -476,7 +480,6 @@ header .follow a:hover{
 .footer span{
     color:var(--main-color);
 }
-/* media queries  */
 @media (max-width:991px){
 
     html{
